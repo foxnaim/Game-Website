@@ -180,3 +180,38 @@ span> img{
     top: -5px;
     left: -5px;
 }
+
+.conteinerTextInfo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center; /* Центрирование по вертикали */
+  padding: 50px 0;
+  font-size: 35px;
+  font-weight: 600;
+  width: 800px;
+  margin: auto; /* Центрирование блока по горизонтали */
+}
+
+
+
+.conteinerBanner{
+  padding: 80px 20px;
+}
+
+.conteinerBanner> h3{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.conteinerBanner> p{
+  line-height: 170%;
+  margin-bottom: 30px;
+  width: 550px;
+}
+
+.conteinerBanner> img{
+width: 100%;
+margin-bottom: 30px;
+}
