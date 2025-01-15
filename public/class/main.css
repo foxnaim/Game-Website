@@ -38,6 +38,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 50px 20px;
+  z-index: 2;
+  position: relative;
 }
 
 header > nav > ul {
@@ -88,6 +90,7 @@ header nav ul li:not(.active):not(.btn) a:hover::after {
 .heroConteiner {
   margin-top: 50px;
   padding: 0 20px;
+  z-index: 1;
 }
 
 .hero__info {
@@ -131,5 +134,49 @@ header nav ul li:not(.active):not(.btn) a:hover::after {
     position: absolute;
     top: 0px;
     right: 0;
-   
+}
+
+.conteinerTrending{
+    padding-top: 150px;
+}
+
+.conteinerInfo> h3{
+    font-weight: 600;
+    font-size: 31px;
+} 
+
+.conteinerInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteinerInfo > .see_all{
+    color: #fff;
+    background: #25211d;
+    border-radius: 5px;
+    padding: 12px 23px;
+    transition: all 500ms ease;
+}
+
+.conteinerInfo > .see_all:hover{
+    transform: scale(1.2);
+}
+
+.conteinerTrending > .Game{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 0;
+}
+span{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+span> img{
+    position: relative;
+    top: -5px;
+    left: -5px;
 }
