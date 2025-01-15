@@ -215,3 +215,43 @@ span> img{
 width: 100%;
 margin-bottom: 30px;
 }
+
+.features {
+  display: flex; /* Расположить вложенные элементы вертикально */
+  align-items: center;   /* Выравнивание по центру */
+  background-image: url('../images/Bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 80px 20px;
+  text-align: center; /* Центрирование текста внутри */
+}
+
+.features > h3 {
+  margin-bottom: 20px;
+  max-width: 800px;
+  font-size: 30px;
+}
+
+.features > p {
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.inform{
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.inform> .block{
+  text-align: center;
+  width: 20%;
+  margin: 30px 2%;
+}
+
+.inform> .block> img{
+margin-bottom: 15px;
+}
