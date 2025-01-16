@@ -53,6 +53,10 @@ http
         console.log("News page");
         Navigation(res, "/pages/News.html", ".html");
         break;
+        case "/btn":
+          console.log("btn page");
+          Navigation(res, "/pages/Contacts.html", ".html");
+          break;
       default:
         const extname = String(path.extname(url)).toLowerCase();
         if (extname in mimeTypes) {
