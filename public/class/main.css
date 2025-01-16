@@ -551,4 +551,46 @@ justify-content: space-between;
 }
 
 
-/*news*/
+/*portfolio*/
+
+.contentMain{
+  padding: 20px 20px;
+}
+
+.contentMain h2{
+  text-align: center;
+  margin: 20px 0;
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.contentMain p{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.conteinerPages{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.configImg> img{
+  margin: 50px 20px;
+  max-width: 800px;
+}
+
+.configImgInfo> h3{
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.infoCkeck{
+  list-style-type: none;
+}
+
+.infoCkeck> li{
+  padding: 5px 0;
+}
