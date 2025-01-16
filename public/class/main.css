@@ -15,7 +15,7 @@ body {
     rgba(0, 0, 0, 1) 0%,
     rgba(26, 14, 1, 1) 100%
   );
-
+  overflow-x: hidden;
 }
 
 a {
@@ -47,21 +47,21 @@ header > nav > ul {
   display: flex;
   gap: 50px;
 }
-
 header nav ul li:not(.active):not(.btn) a {
-  position: relative; /* Позиционирование для нижней границы */
+  position: relative; /* Позиционирование для псевдоэлемента */
 }
 
 header nav ul li:not(.active):not(.btn) a:hover::after {
   content: "";
-  position: absolute;
-  bottom: -2px; /* Расположение под текстом */
+  position: absolute; /* Абсолютное позиционирование */
+  bottom: -2px; /* Под текстом */
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #dc7000;
-  border-radius: 10px;
+  background-color: #dc7000; /* Оранжевая линия */
+  border-radius: 10px; /* Скругление углов */
 }
+
 
 .btn {
   background: #dc7000;
@@ -116,69 +116,69 @@ header nav ul li:not(.active):not(.btn) a:hover::after {
   margin: 30px 0;
 }
 
-.hero__info > .btn{
-    background: #fa8305;
-    color: #fff;
-    border-radius: 50px;
-    padding: 15px 30px;
-    border: 0;
-    transition: all 500ms ease;
+.hero__info > .btn {
+  background: #fa8305;
+  color: #fff;
+  border-radius: 50px;
+  padding: 15px 30px;
+  border: 0;
+  transition: all 500ms ease;
 }
 
-.hero__info > .btn:hover{
-    cursor: pointer;
-    transform: scale(1.2);
+.hero__info > .btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
-.heroConteiner> img{
-    position: absolute;
-    top: 0px;
-    right: 0;
+.heroConteiner > img {
+  position: absolute;
+  top: 0px;
+  right: 0;
 }
 
-.conteinerTrending{
-    padding-top: 150px;
+.conteinerTrending {
+  padding-top: 150px;
 }
 
-.conteinerInfo> h3{
-    font-weight: 600;
-    font-size: 31px;
-} 
-
-.conteinerInfo{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.conteinerInfo > h3 {
+  font-weight: 600;
+  font-size: 31px;
 }
 
-.conteinerInfo > .see_all{
-    color: #fff;
-    background: #25211d;
-    border-radius: 5px;
-    padding: 12px 23px;
-    transition: all 500ms ease;
+.conteinerInfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.conteinerInfo > .see_all:hover{
-    transform: scale(1.2);
+.conteinerInfo > .see_all {
+  color: #fff;
+  background: #25211d;
+  border-radius: 5px;
+  padding: 12px 23px;
+  transition: all 500ms ease;
 }
 
-.conteinerTrending > .Game{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 50px 0;
-}
-span{
-    display: block;
-    text-align: center;
-    margin-top: 20px;
+.conteinerInfo > .see_all:hover {
+  transform: scale(1.2);
 }
 
-span> img{
-    position: relative;
-    top: -5px;
-    left: -5px;
+.conteinerTrending > .Game {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 50px 0;
+}
+span {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+span > img {
+  position: relative;
+  top: -5px;
+  left: -5px;
 }
 
 .conteinerTextInfo {
@@ -193,33 +193,31 @@ span> img{
   margin: auto; /* Центрирование блока по горизонтали */
 }
 
-
-
-.conteinerBanner{
+.conteinerBanner {
   padding: 80px 20px;
 }
 
-.conteinerBanner> h3{
+.conteinerBanner > h3 {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 30px;
 }
 
-.conteinerBanner> p{
+.conteinerBanner > p {
   line-height: 170%;
   margin-bottom: 30px;
   width: 550px;
 }
 
-.conteinerBanner> img{
-width: 100%;
-margin-bottom: 30px;
+.conteinerBanner > img {
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .features {
   display: flex; /* Расположить вложенные элементы вертикально */
-  align-items: center;   /* Выравнивание по центру */
-  background-image: url('../images/Bg.png');
+  align-items: center; /* Выравнивание по центру */
+  background-image: url("../images/Bg.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -239,19 +237,187 @@ margin-bottom: 30px;
   max-width: 800px;
 }
 
-.inform{
+.inform {
   display: flex;
   margin-top: 50px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.inform> .block{
+.inform > .block {
   text-align: center;
   width: 20%;
   margin: 30px 2%;
 }
 
-.inform> .block> img{
-margin-bottom: 15px;
+.inform > .block > img {
+  margin-bottom: 15px;
+}
+
+.contProject {
+  padding: 100px 20px;
+}
+
+.contProject h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.contProject p {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+.contProject .images {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.contProject > .see_all {
+  color: #fff;
+  background: #25211d;
+  border-radius: 5px;
+  padding: 12px 23px;
+  transition: all 500ms ease;
+}
+
+.contProject > .see_all:hover {
+  transform: scale(1.2);
+}
+
+/*fo*/
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  color: #fff;
+}
+
+.newsletter-content {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.newsletter-subscribe {
+  background: #1c140f;
+  padding: 1.5rem;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.newsletter-subscribe h3 {
+  margin-bottom: 1rem;
+}
+
+.newsletter-subscribe p {
+  margin-bottom: 1rem;
+  color: #aaa;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 1rem;
+}
+
+.email-input {
+  padding: 0.5rem;
+  border: 1px solid #444;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.btn {
+  background: #ff6600;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-logo,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-contact .social-icons a {
+  margin-right: 0.5rem;
+}
+
+.footer-bottom {
+  margin-top: 150px;
+  text-align: center;
+  margin-top: 1rem;
+  color: #aaa;
+}
+
+/*About*/
+
+.heroAboutContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  position: relative;
+  color: #fff; 
+}
+
+.infoAbout {
+ width: 500px; 
+ padding: 100px 0;
+ margin-left: 50px;
+}
+
+.infoAbout h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.infoAbout p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #ccc; /* Светло-серый текст */
+}
+
+.heroAboutContent img {
+  position: absolute;
+  right: -150px;
+  top: 0;
 }
