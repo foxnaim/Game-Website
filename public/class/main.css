@@ -741,3 +741,139 @@ justify-content: space-between;
   gap: 10px;
   margin: 20px 0;
 }
+
+/*News*/
+
+.wrapContnews h2{
+text-align: center;
+font-size: 33px;
+font-weight: 600;
+}
+
+.wrapContnews p{
+  text-align: center;
+  
+  }
+
+.wrapContnewsInfo{
+  display: grid;
+  justify-content: start;
+  padding: 80px 60px;
+}
+
+.news-card {
+  width: 400px;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.news-info {
+  padding: 20px;
+}
+
+.author-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.author {
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.time {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.news-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.blockeyborder{
+  border: 2px solid #dc7000;
+}
+
+.wrapContnewsInfogyigiygigi{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ margin: 30px 0;
+}
+
+
+.news-card-small-small {
+  width: 250px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.image-wrapper-small img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.news-info-small {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.author-time-small {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.author-small {
+  background-color: #f06262;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.time-small {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.news-title-small {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  line-height: 1.4;
+}
